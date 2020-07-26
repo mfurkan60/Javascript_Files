@@ -52,7 +52,7 @@ fetch('files/data.xml').then((response) => {
 
 
 // Json File
-fetch('https://api.github.com/users').then((response) => {
+fetch('files/data.json').then((response) => {
 return response.json().then((users) => {
     let output = '<ul class="list-group text-center">';
     users.forEach(function (user) {
